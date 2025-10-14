@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-poppins;
+  }
+}
+
+@layer utilities {
+  .glow-text-green {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+
+  .glow-text-red {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+  }
+
+  .glow-text-blue {
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;
+  }
+
+  .glow-border-green {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+
+  .glow-border-red {
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  }
+
+  .glow-border-blue {
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+  }
+}
