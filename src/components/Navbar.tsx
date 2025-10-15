@@ -49,12 +49,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <button
-            onClick={() => scrollToSection('home')}
-            className="text-2xl font-bold font-mono glow-text-blue"
-          >
-            Season 3
-          </button>
+          <div className="w-8"></div>
 
           <div className="hidden md:flex space-x-6">
             {navItems.map((item) => (

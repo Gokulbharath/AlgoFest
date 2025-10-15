@@ -62,9 +62,12 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="animate-fadeInUp">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 glow-text-blue font-mono">
-            Season 3
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 glow-text-blue font-mono">
+            ALGOFEST
           </h1>
+          <div className="text-3xl md:text-5xl font-bold mb-6 text-blue-400">
+            Season 3
+          </div>
           <p className="text-xl md:text-3xl mb-8 text-gray-300 font-light">
             Code the Future
           </p>

@@ -23,12 +23,12 @@ export default function About() {
     <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 glow-text-blue">
-          About Season 3
+          About ALGOFEST Season 3
         </h2>
 
         <div className="max-w-4xl mx-auto mb-16">
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 text-center">
-            Season 3 is a national-level hackathon designed to challenge and inspire the next generation of tech innovators.
+            ALGOFEST Season 3 is a national-level hackathon designed to challenge and inspire the next generation of tech innovators.
             Hosted by the Department of Computer Science and Business Systems in association with LearnLogicify Technologies,
             this 5-hour coding competition welcomes participants from colleges across the country.
           </p>

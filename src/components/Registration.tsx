@@ -9,7 +9,7 @@ export default function Registration() {
         </h2>
 
         <p className="text-center text-xl text-gray-300 mb-12">
-          Scan the QR code below to register for Season 3
+          Scan the QR code below to register for ALGOFEST Season 3
         </p>
 
         <div className="max-w-md mx-auto">
