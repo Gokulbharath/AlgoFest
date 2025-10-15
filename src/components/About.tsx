@@ -1,5 +1,8 @@
 import { Code, Brain, Trophy, Globe, Zap, CheckCircle } from 'lucide-react';
 
+import KitLogo from '../assets/kit.jpg';
+import LLLogo from '../assets/ll.jpg';
+
 export default function About() {
   const highlights = [
     { icon: Code, title: 'Real-time Coding Challenges', color: 'text-blue-400' },
@@ -10,20 +13,21 @@ export default function About() {
     { icon: Code, title: 'Competitive Programming Excellence', color: 'text-indigo-400' },
   ];
 
-  const rules = [
-    'Teams can have a maximum of 2–3 members.',
-    'The contest will be held on a competitive coding platform.',
-    'Internet and required tools will be provided.',
-    'Participants must bring their college ID card.',
-    'Plagiarism is strictly prohibited.',
-    "Judges' decision will be final.",
-  ];
+const rules = [
+  'The hackathon is individual — no teams allowed.',
+  'Register with a valid email and provide correct details.',
+  'Participate online and submit your project via the official portal.',
+  'Plagiarism or copying code will lead to disqualification.',
+  'Be professional and follow the code of conduct.',
+  'Judges’ and organizers’ decisions are final.'
+];
+
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 glow-text-blue">
-          About ALGOFEST Season 3
+          About
         </h2>
 
         <div className="max-w-4xl mx-auto mb-16">
@@ -36,23 +40,25 @@ export default function About() {
             Our goal is to encourage problem-solving, algorithmic thinking, and real-world innovation through competitive programming.
           </p>
 
+          {/* Event Details block */}
+          
           <div className="flex items-center justify-center gap-8 mb-12">
-            <div className="bg-white rounded-lg p-6 hover:scale-105 transition-transform duration-300">
+            <div className="bg-white rounded-full p-2 hover:scale-105 transition-transform duration-300 flex items-center justify-center">
               <img
-                src="https://images.pexels.com/photos/5915278/pexels-photo-5915278.jpeg?auto=compress&cs=tinysrgb&w=200"
+                src={KitLogo}
                 alt="KIT Logo"
-                className="h-20 w-auto object-contain"
+                className="h-40 w-40 object-cover rounded-full"
               />
-              <p className="text-center text-gray-800 font-semibold mt-2 text-sm">KIT</p>
+              <p className="sr-only">KIT</p>
             </div>
             <div className="text-4xl text-blue-400 font-bold">X</div>
-            <div className="bg-white rounded-lg p-6 hover:scale-105 transition-transform duration-300">
+            <div className="bg-white rounded-full p-2 hover:scale-105 transition-transform duration-300 flex items-center justify-center">
               <img
-                src="https://images.pexels.com/photos/5915278/pexels-photo-5915278.jpeg?auto=compress&cs=tinysrgb&w=200"
+                src={LLLogo}
                 alt="LearnLogicify Logo"
-                className="h-20 w-auto object-contain"
+                className="h-40 w-40 object-cover rounded-full"
               />
-              <p className="text-center text-gray-800 font-semibold mt-2 text-sm">LearnLogicify</p>
+              <p className="sr-only">LearnLogicify</p>
             </div>
           </div>
         </div>
@@ -71,6 +77,21 @@ export default function About() {
             );
           })}
         </div>
+          <div className="max-w-3xl mx-auto mb-10">
+            <div className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 border border-blue-500/20 rounded-xl p-6 md:p-8 text-center">
+              <h4 className="text-2xl font-semibold text-white mb-4">Event Details</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                <div>
+                  <p className="text-gray-400"><span className="text-white font-semibold">Format:</span> Individual coding challenges on a hosted platform (time-limited rounds)</p>
+                  <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Eligibility:</span> Open to undergraduate students from all colleges</p>
+                </div>
+                <div>
+                  <p className="text-gray-400"><span className="text-white font-semibold">Registration Fee:</span> Free / Rs. 200 (early bird discount may apply)</p>
+                  <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Prizes:</span> Cash prizes and certificates</p>
+                </div>
+              </div>
+               </div>
+          </div>
 
         <div className="max-w-6xl mx-auto mt-20">
           <h3 className="text-3xl md:text-5xl font-bold text-center mb-12 text-blue-400">

@@ -2,12 +2,13 @@ import { CheckCircle } from 'lucide-react';
 
 export default function Rules() {
   const rules = [
-    'Teams can have a maximum of 2–3 members.',
-    'The contest will be held on a competitive coding platform.',
-    'Internet and required tools will be provided.',
-    'Participants must bring their college ID card.',
-    'Plagiarism is strictly prohibited.',
-    "Judges' decision will be final.",
+    'The event is conducted individually — team participation is not allowed.',
+    'Participants must bring their valid college ID card for verification.',
+    'The contest will be hosted on an online coding platform; system and internet access will be provided.',
+    'Each participant must use only the assigned system during the event.',
+    'Any form of plagiarism, code sharing, or unfair means will result in disqualification.',
+    'Participants are expected to maintain discipline throughout the event.',
+    "The judges' and organizers' decisions will be final and binding."
   ];
 
   return (
@@ -26,7 +27,10 @@ export default function Rules() {
                   className="flex items-start gap-4 group animate-fadeInUp"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CheckCircle className="text-green-400 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform duration-300" size={24} />
+                  <CheckCircle
+                    className="text-green-400 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform duration-300"
+                    size={24}
+                  />
                   <p className="text-lg text-gray-300">{rule}</p>
                 </div>
               ))}
@@ -34,7 +38,7 @@ export default function Rules() {
 
             <div className="mt-10 pt-8 border-t border-gray-700">
               <p className="text-center text-gray-400 italic">
-                For detailed rules and regulations, please contact the coordinators.
+                For complete details or clarifications, please contact the event coordinators.
               </p>
             </div>
           </div>

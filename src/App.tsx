@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Calendar, Clock, MapPin, Code, Brain, Trophy, Globe, Zap, Users, Phone, Mail, Instagram, Linkedin, Youtube, ChevronUp, Menu, X } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
 import Hero from './components/Hero';
 import About from './components/About';
+import Registration from './components/Registration';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -27,8 +28,9 @@ function App() {
     <div className="bg-black text-white min-h-screen overflow-x-hidden">
       <Navbar />
       <Hero />
-      <About />
-      <Gallery />
+  <About />
+  <Registration />
+  <Gallery />
       <Contact />
       <Footer />
 

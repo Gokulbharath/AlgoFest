@@ -17,7 +17,7 @@ export default function Contact() {
                 <User className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={24} />
                 <div>
                   <p className="text-gray-400 text-sm">Faculty Advisor</p>
-                  <p className="text-white text-lg font-semibold">Mr. Sandeep</p>
+                  <p className="text-white text-lg font-semibold">Mr. Sandeep D</p>
                 </div>
               </div>
 
@@ -40,7 +40,7 @@ export default function Contact() {
               <div>
                 <div className="flex items-center gap-4 group mb-2">
                   <User className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={24} />
-                  <p className="text-white text-lg font-semibold">Gokul Bharath</p>
+                  <p className="text-white text-lg font-semibold">Gokul Bharath V</p>
                 </div>
                 <div className="flex items-center gap-4 group ml-10">
                   <Phone className="text-cyan-400" size={20} />
@@ -53,7 +53,7 @@ export default function Contact() {
               <div>
                 <div className="flex items-center gap-4 group mb-2">
                   <User className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={24} />
-                  <p className="text-white text-lg font-semibold">Syfuthinin</p>
+                  <p className="text-white text-lg font-semibold">Mohammed Syfudeen S</p>
                 </div>
                 <div className="flex items-center gap-4 group ml-10">
                   <Phone className="text-cyan-400" size={20} />
@@ -70,7 +70,7 @@ export default function Contact() {
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
                   <a href="mailto:algofest@kit.edu.in" className="text-white hover:text-yellow-400 transition-colors text-sm">
-                    algofest@kit.edu.in
+                    algofest.kit@gmail.com
                   </a>
                 </div>
               </div>
@@ -86,27 +86,53 @@ export default function Contact() {
               <h4 className="text-lg font-semibold text-gray-300">Follow Them</h4>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/learnlogicify_official?igsh=MTdsZmd1NmZsejBuMw=="
                   className="bg-gray-800 hover:bg-pink-600 p-3 rounded-full transition-all duration-300 hover:scale-110"
                   aria-label="Instagram"
                 >
                   <Instagram size={24} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/learnlogicify-technologies-llp/"
                   className="bg-gray-800 hover:bg-blue-600 p-3 rounded-full transition-all duration-300 hover:scale-110"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={24} />
                 </a>
                 <a
-                  href="#"
+                  href="https://youtube.com/@sachinscodinguniverse?si=LJDpDDDaKqogPs10"
                   className="bg-gray-800 hover:bg-red-600 p-3 rounded-full transition-all duration-300 hover:scale-110"
                   aria-label="YouTube"
                 >
                   <Youtube size={24} />
                 </a>
               </div>
+                
+                {/* Follow Us - event/organizers social links (replace hrefs with actual URLs) */}
+                <div className="mt-4">
+                  <h4 className="text-lg font-semibold text-gray-300">Follow Us</h4>
+                  <div className="flex gap-4 mt-2">
+                    <a
+                      href="https://www.instagram.com/kit_csbs?igsh=MWlvMzNieXl0N3BxdA=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gray-800 hover:bg-pink-600 p-3 rounded-full transition-all duration-300 hover:scale-110"
+                      aria-label="Follow us on Instagram"
+                    >
+                      <Instagram size={24} />
+                    </a>
+                    
+                    <a
+                      href="https://youtube.com/@techwitzkit?si=1CHBLDyJgSC7ZLlt"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gray-800 hover:bg-red-600 p-3 rounded-full transition-all duration-300 hover:scale-110"
+                      aria-label="Follow us on YouTube"
+                    >
+                      <Youtube size={24} />
+                    </a>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -131,7 +157,7 @@ export default function Contact() {
 
             <div className="w-full h-64 bg-gray-800 rounded-lg overflow-hidden border border-gray-700">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5835!2d76.9945!3d11.0059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8586e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sKIT%20Coimbatore!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0!2d76.9945!3d11.0059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8586e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sKIT%20Coimbatore!5e0!3m2!1sen!2sin!4v1697400000000"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

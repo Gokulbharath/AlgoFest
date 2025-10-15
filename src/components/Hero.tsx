@@ -26,12 +26,6 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-  const scrollToRegistration = () => {
-    const element = document.getElementById('registration');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -109,11 +103,15 @@ export default function Hero() {
           </div>
 
           <button
-            onClick={scrollToRegistration}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-xl px-12 py-4 rounded-full transition-all duration-300 glow-border-blue hover:scale-105 animate-pulse"
-          >
-            Register Now
-          </button>
+  onClick={() => window.open(
+    "https://docs.google.com/forms/d/e/1FAIpQLSfX-AQ8yoYP70ZQSQ4GqVPFZ7E-z4A4mUr1icvu0PFkQ_ROxg/viewform?usp=dialog",
+    "_blank"
+  )}
+  className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-xl px-12 py-4 rounded-full transition-all duration-300 glow-border-blue hover:scale-105 animate-pulse"
+>
+  Register Now
+</button>
+
         </div>
       </div>
 

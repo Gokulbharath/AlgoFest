@@ -1,34 +1,23 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import e1 from "../assets/img1.jpg"
+import e2 from "../assets/img2.jpg"
+import e3 from "../assets/img3.jpg"
+import e4 from "../assets/img4.jpg"
+import e5 from "../assets/img5.jpg"
+import e6 from "../assets/img6.jpg"
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
-    {
-      url: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Hackathon Participants',
-    },
-    {
-      url: 'https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Coding Competition',
-    },
-    {
-      url: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Team Collaboration',
-    },
-    {
-      url: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Prize Distribution',
-    },
-    {
-      url: 'https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Tech Innovators',
-    },
-    {
-      url: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Workshop Session',
-    },
+    { url: e1, title: 'Event 1' },
+    { url: e2, title: 'Event 2' },
+    { url: e3, title: 'Event 3' },
+    { url: e4, title: 'Event 4' },
+    { url: e5, title: 'Event 5' },
+    { url: e6, title: 'Event 6' },
+
   ];
 
   return (
@@ -38,6 +27,11 @@ export default function Gallery() {
           Event Gallery
         </h2>
 
+ {/* <img
+                src={e1}
+                alt={""}
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              /> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {images.map((image, index) => (
             <div
@@ -61,11 +55,16 @@ export default function Gallery() {
       {selectedImage !== null && (
         <div
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setSelectedImage(null);
+          }}
         >
           <button
             className="absolute top-4 right-4 text-white hover:text-blue-400 transition-colors"
-            onClick={() => setSelectedImage(null)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(null);
+            }}
           >
             <X size={32} />
           </button>
@@ -73,6 +72,7 @@ export default function Gallery() {
             src={images[selectedImage].url}
             alt={images[selectedImage].title}
             className="max-w-full max-h-full object-contain rounded-lg"
+            onClick={(e) => e.stopPropagation()}
           />
         </div>
       )}
