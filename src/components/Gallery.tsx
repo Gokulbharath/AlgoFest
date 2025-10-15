@@ -11,12 +11,12 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
-    { url: e1, title: 'Event 1' },
-    { url: e2, title: 'Event 2' },
-    { url: e3, title: 'Event 3' },
-    { url: e4, title: 'Event 4' },
-    { url: e5, title: 'Event 5' },
-    { url: e6, title: 'Event 6' },
+    { url: e1, title: '' },
+    { url: e2, title: '' },
+    { url: e3, title: '' },
+    { url: e4, title: '' },
+    { url: e5, title: '' },
+    { url: e6, title: '' },
 
   ];
 

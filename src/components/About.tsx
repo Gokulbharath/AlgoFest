@@ -7,7 +7,7 @@ export default function About() {
   const highlights = [
     { icon: Code, title: 'Real-time Coding Challenges', color: 'text-blue-400' },
     { icon: Brain, title: 'Brainstorming & Problem Solving', color: 'text-cyan-400' },
-    { icon: Trophy, title: 'Cash Prizes for Winners', color: 'text-yellow-400' },
+    { icon: Trophy, title: 'E-Certificate of Participation', color: 'text-yellow-400' },
     { icon: Globe, title: 'Open for All Colleges', color: 'text-blue-500' },
     { icon: Zap, title: '5 Hours of Non-stop Innovation', color: 'text-sky-400' },
     { icon: Code, title: 'Competitive Programming Excellence', color: 'text-indigo-400' },
