@@ -31,11 +31,17 @@ const rules = [
         </h2>
 
         <div className="max-w-4xl mx-auto mb-16">
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 text-center">
-            ALGOFEST Season 3 is a national-level hackathon designed to challenge and inspire the next generation of tech innovators.
-            Hosted by the Department of Computer Science and Business Systems in association with LearnLogicify Technologies,
-            this 5-hour coding competition welcomes participants from colleges across the country.
-          </p>
+        <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+  ALGOFEST Season 3 is a national-level hackathon designed to challenge and inspire the next generation of tech innovators.
+  <br /><br />
+  <strong>Center for Training and Placements</strong> and <strong>Computer Science and Business Systems</strong>,
+  in association with <strong>LearnLogicify Technologies</strong>, organize this event to foster innovation and
+  problem-solving skills.
+  <br /><br />
+  This 5-hour coding competition welcomes participants from colleges across the country.
+</p>
+
+
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center mb-12">
             Our goal is to encourage problem-solving, algorithmic thinking, and real-world innovation through competitive programming.
           </p>
@@ -86,7 +92,7 @@ const rules = [
                   <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Eligibility:</span> Open to undergraduate students from all colleges</p>
                 </div>
                 <div>
-                  <p className="text-gray-400"><span className="text-white font-semibold">Registration Fee:</span> Rs. 200 (early bird discount may apply)</p>
+                  <p className="text-gray-400"><span className="text-white font-semibold">Registration Fee:</span> Rs. 200 (An early bird discount of ₹99 may apply.)</p>
                   <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Prizes:</span> E-certificates</p>
                 </div>
               </div>

@@ -25,7 +25,7 @@ export default function Registration() {
               <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
                 <p className="text-blue-400 font-semibold mb-2">Registration Details:</p>
                 <ul className="text-gray-300 text-sm space-y-1">
-                  <li>Discount for Early bird registration</li>
+                  <li>Hurry! Grab your early bird discount — pay just ₹99.</li>
                   <li>Limited slots available</li>
                 </ul>
               </div>

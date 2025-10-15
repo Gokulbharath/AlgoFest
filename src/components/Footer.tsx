@@ -22,7 +22,7 @@ export default function Footer() {
               ALGOFEST
             </h3>
             <p className="text-gray-400 text-sm">
-              A national-level coding hackathon organized by KIT-CSBS in association with LearnLogicify Technologies.
+              A national-level coding hackathon organized by Center for Training and Placements & KIT-CSBS in association with LearnLogicify Technologies.
             </p>
           </div>
 
@@ -44,7 +44,8 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-blue-400">Organized By</h4>
             <p className="text-gray-400 text-sm mb-2">
-              Department of Computer Science and Business Systems
+              Center for Training and Placements <br />
+              &  Department of Computer Science and Business Systems
             </p>
             <p className="text-gray-400 text-sm">
               Kalaignarkarunanidhi Institute of Technology, Coimbatore
@@ -57,7 +58,7 @@ export default function Footer() {
             © 2025 KIT-CSBS | ALGOFEST | All Rights Reserved.
           </p>
           <p className="text-gray-600 text-xs">
-            Designed by Gokul Bharath & Tech Team - KIT CSBS
+            Designed by Gokul Bharath 
           </p>
         </div>
       </div>

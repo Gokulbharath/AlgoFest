@@ -77,7 +77,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-2 bg-gray-900/50 px-6 py-3 rounded-lg border border-red-500/30">
               <MapPin className="text-red-400" size={24} />
-              <span>KIT, Coimbatore</span>
+              <span>virtual</span>
             </div>
           </div>
 
