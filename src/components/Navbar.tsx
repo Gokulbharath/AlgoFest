@@ -10,7 +10,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      const sections = ['home', 'about', 'gallery', 'registration', 'contact'];
+      const sections = ['home', 'about', 'gallery', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -38,7 +38,6 @@ export default function Navbar() {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'gallery', label: 'Gallery' },
-    { id: 'registration', label: 'Register' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -54,7 +53,7 @@ export default function Navbar() {
             onClick={() => scrollToSection('home')}
             className="text-2xl font-bold font-mono glow-text-blue"
           >
-            ALGOFEST<span className="text-red-500">_3</span>
+            Season 3
           </button>
 
           <div className="hidden md:flex space-x-6">

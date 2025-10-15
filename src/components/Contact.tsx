@@ -1,4 +1,4 @@
-import { Phone, Mail, Instagram, Linkedin, Youtube, MapPin } from 'lucide-react';
+import { Phone, Mail, Instagram, Linkedin, Youtube, MapPin, User } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -8,34 +8,82 @@ export default function Contact() {
           Get in Touch
         </h2>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold mb-6 text-blue-400">Student Coordinator</h3>
+            <h3 className="text-2xl font-bold mb-6 text-blue-400">Staff Coordinator</h3>
 
             <div className="space-y-4">
               <div className="flex items-center gap-4 group">
-                <Phone className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={24} />
+                <User className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={24} />
                 <div>
-                  <p className="text-gray-400 text-sm">Call or WhatsApp</p>
-                  <a href="tel:+919944699989" className="text-white text-lg hover:text-blue-400 transition-colors">
-                    Gokul Bharath - 9944699989
-                  </a>
+                  <p className="text-gray-400 text-sm">Faculty Advisor</p>
+                  <p className="text-white text-lg font-semibold">Mr. Sandeep</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 group">
-                <Mail className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={24} />
+                <Phone className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={24} />
                 <div>
-                  <p className="text-gray-400 text-sm">Email</p>
-                  <a href="mailto:algofest@kit.edu.in" className="text-white hover:text-cyan-400 transition-colors">
-                    algofest@kit.edu.in
+                  <p className="text-gray-400 text-sm">Call or WhatsApp</p>
+                  <a href="tel:+919688252414" className="text-white hover:text-cyan-400 transition-colors">
+                    9688252414
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
+            <h3 className="text-2xl font-bold mb-6 text-blue-400">Student Coordinators</h3>
+
+            <div className="space-y-6">
+              <div>
+                <div className="flex items-center gap-4 group mb-2">
+                  <User className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={24} />
+                  <p className="text-white text-lg font-semibold">Gokul Bharath</p>
+                </div>
+                <div className="flex items-center gap-4 group ml-10">
+                  <Phone className="text-cyan-400" size={20} />
+                  <a href="tel:+919944699989" className="text-gray-300 hover:text-cyan-400 transition-colors">
+                    9944699989
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-4 group mb-2">
+                  <User className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={24} />
+                  <p className="text-white text-lg font-semibold">Syfuthinin</p>
+                </div>
+                <div className="flex items-center gap-4 group ml-10">
+                  <Phone className="text-cyan-400" size={20} />
+                  <a href="tel:+919042649307" className="text-gray-300 hover:text-cyan-400 transition-colors">
+                    9042649307
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-gray-700">
-              <h4 className="text-lg font-semibold mb-4 text-gray-300">Follow Us</h4>
+            <div className="mt-6 pt-6 border-t border-gray-700">
+              <div className="flex items-center gap-4 group">
+                <Mail className="text-yellow-400 group-hover:scale-110 transition-transform duration-300" size={24} />
+                <div>
+                  <p className="text-gray-400 text-sm">Email</p>
+                  <a href="mailto:algofest@kit.edu.in" className="text-white hover:text-yellow-400 transition-colors text-sm">
+                    algofest@kit.edu.in
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
+            <h3 className="text-2xl font-bold mb-6 text-blue-400">Platform Partner</h3>
+
+            <p className="text-gray-300 mb-6">LearnLogicify Technologies</p>
+
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold text-gray-300">Follow Them</h4>
               <div className="flex gap-4">
                 <a
                   href="#"
@@ -61,7 +109,9 @@ export default function Contact() {
               </div>
             </div>
           </div>
+        </div>
 
+        <div className="max-w-5xl mx-auto">
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-6 text-blue-400">Venue</h3>
 

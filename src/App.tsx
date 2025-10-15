@@ -3,7 +3,6 @@ import { Calendar, Clock, MapPin, Code, Brain, Trophy, Globe, Zap, Users, Phone,
 import Hero from './components/Hero';
 import About from './components/About';
 import Gallery from './components/Gallery';
-import Registration from './components/Registration';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -30,7 +29,6 @@ function App() {
       <Hero />
       <About />
       <Gallery />
-      <Registration />
       <Contact />
       <Footer />
 

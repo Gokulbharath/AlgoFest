@@ -6,7 +6,7 @@ export default function Hero() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const eventDate = new Date('2025-10-27T10:00:00').getTime();
+      const eventDate = new Date('2025-10-25T10:00:00').getTime();
       const now = new Date().getTime();
       const difference = eventDate - now;
 
@@ -62,20 +62,17 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="animate-fadeInUp">
-          <h1 className="text-6xl md:text-8xl font-bold mb-4 glow-text-blue font-mono">
-            ALGOFEST
-          </h1>
-          <div className="text-4xl md:text-6xl font-bold mb-6 text-blue-400">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 glow-text-blue font-mono">
             Season 3
-          </div>
+          </h1>
           <p className="text-xl md:text-3xl mb-8 text-gray-300 font-light">
-            Join the ALGOFEST • Code the Future
+            Code the Future
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 text-lg">
             <div className="flex items-center gap-2 bg-gray-900/50 px-6 py-3 rounded-lg border border-blue-500/30">
               <Calendar className="text-blue-400" size={24} />
-              <span>27th October 2025</span>
+              <span>25th October 2025</span>
             </div>
             <div className="flex items-center gap-2 bg-gray-900/50 px-6 py-3 rounded-lg border border-blue-500/30">
               <Clock className="text-blue-400" size={24} />
