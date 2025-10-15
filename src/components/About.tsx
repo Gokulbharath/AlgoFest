@@ -86,8 +86,8 @@ const rules = [
                   <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Eligibility:</span> Open to undergraduate students from all colleges</p>
                 </div>
                 <div>
-                  <p className="text-gray-400"><span className="text-white font-semibold">Registration Fee:</span> Free / Rs. 200 (early bird discount may apply)</p>
-                  <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Prizes:</span> Cash prizes and certificates</p>
+                  <p className="text-gray-400"><span className="text-white font-semibold">Registration Fee:</span> Rs. 200 (early bird discount may apply)</p>
+                  <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Prizes:</span> E-certificates</p>
                 </div>
               </div>
                </div>
