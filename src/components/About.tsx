@@ -84,44 +84,6 @@ const rules = [
           })}
         </div>
   
-        <div className="max-w-sm mx-auto mb-20 bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl border border-gray-700 shadow-lg p-8 text-center hover:scale-105 transition-transform duration-300">
-  <div className="text-4xl font-bold text-orange-400 mb-2">
-    ₹99 <span className="line-through text-gray-500 text-xl ml-2">₹198</span>
-  </div>
-  <div className="inline-block bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
-    50% OFF
-  </div>
-  <p className="text-gray-300 mb-6 font-medium">
-    Early Bird Special – Save ₹100!
-  </p>
-
-  <ul className="space-y-3 text-gray-200 text-left inline-block">
-    <li className="flex items-center gap-2">
-      <CheckCircle className="text-orange-400" size={20} />
-      Access to Registered Contest
-    </li>
-    <li className="flex items-center gap-2">
-      <CheckCircle className="text-orange-400" size={20} />
-      Logic & Puzzle Challenges
-    </li>
-    <li className="flex items-center gap-2">
-      <CheckCircle className="text-orange-400" size={20} />
-      Real-World Problem Statements
-    </li>
-    <li className="flex items-center gap-2">
-      <CheckCircle className="text-orange-400" size={20} />
-      Onsite Grand Finale Qualification
-    </li>
-    <li className="flex items-center gap-2">
-      <CheckCircle className="text-orange-400" size={20} />
-      Certificate of Participation
-    </li>
-  </ul>
-
-  <button className="mt-8 w-full bg-gradient-to-r from-orange-500 to-yellow-400 text-white font-semibold py-3 rounded-lg hover:from-orange-600 hover:to-yellow-500 transition-all">
-    Register Now
-  </button>
-</div>
 
         <div className="max-w-6xl mx-auto mt-20">
           <h3 className="text-3xl md:text-5xl font-bold text-center mb-12 text-blue-400">
