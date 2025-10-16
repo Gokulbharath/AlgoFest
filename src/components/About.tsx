@@ -13,15 +13,22 @@ export default function About() {
     { icon: Code, title: 'Competitive Programming Excellence', color: 'text-indigo-400' },
   ];
 
-const rules = [
-  'The hackathon is individual — no teams allowed.',
-  'Register with a valid email and provide correct details.',
-  'Participate online and submit your project via the official portal.',
-  'Plagiarism or copying code will lead to disqualification.',
-  'Be professional and follow the code of conduct.',
-  'Judges’ and organizers’ decisions are final.'
-];
+  const rules = [
+    'The hackathon is individual — no teams allowed.',
+    'Register with a valid email and provide correct details.',
+    'Participate online and submit your project via the official portal.',
+    'Plagiarism or copying code will lead to disqualification.',
+    'Be professional and follow the code of conduct.',
+    'Judges’ and organizers’ decisions are final.'
+  ];
 
+  const features = [
+    'Access to Registered Contest',
+    'Logic & Puzzle Challenges',
+    'Real-World Problem Statements',
+    'Onsite Grand Finale Qualification',
+    'Certificate of Participation'
+  ];
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900">
@@ -31,23 +38,21 @@ const rules = [
         </h2>
 
         <div className="max-w-4xl mx-auto mb-16">
-        <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
-  ALGOFEST Season 3 is a national-level hackathon designed to challenge and inspire the next generation of tech innovators.
-  <br /><br />
-  <strong>Center for Training and Placements</strong> and <strong>Computer Science and Business Systems</strong>,
-  in association with <strong>LearnLogicify Technologies</strong>, organize this event to foster innovation and
-  problem-solving skills.
-  <br /><br />
-  This 6-hour coding competition welcomes participants from colleges across the country.
-</p>
-
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+            ALGOFEST Season 3 is a national-level hackathon designed to challenge and inspire the next generation of tech innovators.
+            <br /><br />
+            <strong>Center for Training and Placements</strong> and <strong>Computer Science and Business Systems</strong>,
+            in association with <strong>LearnLogicify Technologies</strong>, organize this event to foster innovation and
+            problem-solving skills.
+            <br /><br />
+            This 6-hour coding competition welcomes participants from colleges across the country.
+          </p>
 
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center mb-12">
             Our goal is to encourage problem-solving, algorithmic thinking, and real-world innovation through competitive programming.
           </p>
 
-          {/* Event Details block */}
-          
+          {/* Logos */}
           <div className="flex items-center justify-center gap-8 mb-12">
             <div className="bg-white rounded-full p-2 hover:scale-105 transition-transform duration-300 flex items-center justify-center">
               <img
@@ -83,8 +88,71 @@ const rules = [
             );
           })}
         </div>
-  
 
+        {/* Redesigned Event Details card (matches provided image style) */}
+        <div className="max-w-3xl mx-auto mb-10">
+          <div className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 border border-blue-500/20 rounded-xl p-6 md:p-8">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+              {/* Left - Price block */}
+              <div className="flex-shrink-0 bg-gradient-to-br from-black/40 to-gray-900/40 border border-gray-700 rounded-xl p-6 w-full md:w-1/2">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="flex items-baseline gap-3">
+                      <span className="text-4xl md:text-6xl font-extrabold text-orange-400">₹99</span>
+                      <span className="text-sm md:text-base text-gray-400 line-through">₹200</span>
+                    </div>
+                    <div className="mt-2">
+                      <span className="inline-block bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                        50% OFF
+                      </span>
+                    </div>
+                    <p className="mt-4 text-gray-300">Early Bird Special - <span className="font-semibold text-white">Save ₹101!</span></p>
+                  </div>
+
+                  {/* Optional small promo icon */}
+                  <div className="hidden md:block">
+                    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" className="opacity-10">
+                      <path d="M12 2L14.5 8H21L15.75 12.25L18.25 18.5L12 14.25L5.75 18.5L8.25 12.25L3 8H9.5L12 2Z" fill="currentColor" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Register button (below price on small screens) */}
+                <div className="mt-6">
+                  <button
+                    onClick={() => { /* handle register click (navigate/open modal) */ }}
+                    className="w-full md:w-auto px-6 py-4 bg-gradient-to-r from-orange-500 to-yellow-400 text-white rounded-2xl text-lg font-semibold shadow-lg hover:scale-105 transition-transform"
+                  >
+                    Register Now
+                  </button>
+                </div>
+              </div>
+
+              {/* Right - features list */}
+              <div className="flex-1 w-full">
+                <h4 className="text-2xl font-semibold text-white mb-4">What's Included</h4>
+                <ul className="space-y-4">
+                  {features.map((f, i) => (
+                    <li key={i} className="flex items-start gap-4">
+                      <span className="flex-shrink-0 mt-1">
+                        <div className="bg-orange-500 rounded-full p-2">
+                          <CheckCircle className="text-white" size={18} />
+                        </div>
+                      </span>
+                      <span className="text-lg text-gray-200">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className="mt-6 text-sm text-gray-400">
+                  Small note: Registrations are limited. Secure your spot to get the early bird benefits.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Rules & Guidelines */}
         <div className="max-w-6xl mx-auto mt-20">
           <h3 className="text-3xl md:text-5xl font-bold text-center mb-12 text-blue-400">
             Rules & Guidelines
