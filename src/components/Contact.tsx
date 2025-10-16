@@ -41,7 +41,7 @@ export default function Contact() {
                   <User className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={24} />
                   <div>
                     <p className="text-gray-400 text-sm">Faculty Advisor</p>
-                    <p className="text-white text-lg font-semibold">Mr Arun akash R</p>
+                    <p className="text-white text-lg font-semibold">Mr Arun Akash R</p>
                   </div>
                 </div>
 

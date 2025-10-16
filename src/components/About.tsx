@@ -33,7 +33,6 @@ export default function About() {
     'Access to Registered Contest',
     'Logic & Puzzle Challenges',
     'Real-World Problem Statements',
-    'Onsite Grand Finale Qualification',
     'Certificate of Participation'
   ];
 

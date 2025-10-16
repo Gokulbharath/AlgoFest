@@ -22,7 +22,7 @@ export default function Footer() {
               ALGOFEST
             </h3>
             <p className="text-gray-400 text-sm">
-              A national-level coding hackathon organized by Center for Training and Placements & KIT-CSBS in association with LearnLogicify Technologies.
+              A national-level coding hackathon organized by Center for Training and Placements  in association with KIT - CSBS.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
             © 2025 KIT-CSBS | ALGOFEST | All Rights Reserved.
           </p>
           <p className="text-gray-600 text-xs">
-            Designed by Gokul Bharath 
+            Designed by <strong>Gokul Bharath</strong>
           </p>
         </div>
       </div>
