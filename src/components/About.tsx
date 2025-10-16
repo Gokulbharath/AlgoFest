@@ -100,14 +100,14 @@ export default function About() {
                   <div>
                     <div className="flex items-baseline gap-3">
                       <span className="text-4xl md:text-6xl font-extrabold text-blue-400">₹99</span>
-                      <span className="text-sm md:text-base text-gray-400 line-through">₹200</span>
+                      <span className="text-sm md:text-base text-gray-400 line-through">₹199</span>
                     </div>
                     <div className="mt-2">
                       <span className="inline-block bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
                         50% OFF
                       </span>
                     </div>
-                    <p className="mt-4 text-gray-300">Early Bird Special - <span className="font-semibold text-white">Save ₹101!</span></p>
+                    <p className="mt-4 text-gray-300">Early Bird Special - <span className="font-semibold text-white">Save ₹100!</span></p>
                   </div>
 
                   {/* Optional small promo icon */}
