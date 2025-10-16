@@ -2,7 +2,7 @@ import React from 'react';
 import { Code, Brain, Trophy, Globe, Zap, CheckCircle } from 'lucide-react';
 
 import KitLogo from '../assets/kit.jpg';
-import LLKLogo from '../assets/llk.jpg'; // ensure this file exists (case-sensitive)
+import LLKLogo from '../assets/llt.png'; // ensure this file exists (case-sensitive)
 
 type Highlight = {
   icon: React.ComponentType<any>;
