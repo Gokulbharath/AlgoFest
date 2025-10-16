@@ -48,7 +48,7 @@ export default function About() {
           <img
             src={KitLogo}
             alt="KIT Logo"
-            className="h-30 w-30 object-cover rounded-full shadow-lg"
+            className="h-28 w-28 object-cover rounded-full shadow-lg"
           />
         </div>
 
