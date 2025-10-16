@@ -87,15 +87,25 @@ const rules = [
             <div className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 border border-blue-500/20 rounded-xl p-6 md:p-8 text-center">
               <h4 className="text-2xl font-semibold text-white mb-4">Event Details</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                <div>
-                  <p className="text-gray-400"><span className="text-white font-semibold">Format:</span> Individual coding challenges on a hosted platform (time-limited rounds)</p>
-                  <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Eligibility:</span> Open to undergraduate students from all colleges</p>
-                </div>
-                <div>
-                  <p className="text-gray-400"><span className="text-white font-semibold">Registration Fee:</span> Rs. 200 (<strong>Early Bird Special - Save ₹100!.</strong>)</p>
-                  <p className="text-gray-400 mt-2"><span className="text-white font-semibold">Prizes:</span> E-certificates</p>
-                </div>
-              </div>
+  <div>
+    <p className="text-gray-400">
+      <span className="text-white font-semibold">Format:</span> Individual coding challenges on a hosted platform 
+    </p>
+    <p className="text-gray-400 mt-2">
+      <span className="text-white font-semibold">Eligibility:</span> Open to undergraduate students from all colleges
+    </p>
+  </div>
+  <div>
+    <p className="text-gray-400 mt-2">
+      <span className="text-white font-semibold">Registration Fee:</span> Rs. 200 (
+      <strong className="text-blue-400">Early Bird Special - Save ₹100!</strong>)
+    </p>
+    <p className="text-gray-400 mt-2">
+      <span className="text-white font-semibold">Prizes:</span> E-certificates
+    </p>
+  </div>
+</div>
+
                </div>
           </div>
 
