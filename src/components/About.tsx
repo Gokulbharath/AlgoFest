@@ -48,7 +48,7 @@ export default function About() {
           <img
             src={KitLogo}
             alt="KIT Logo"
-            className="h-[3cm] w-[3cm] object-cover rounded-full shadow-lg"
+            className="h-[5cm] w-[5cm] object-cover rounded-full shadow-lg"
           />
         </div>
 
@@ -75,7 +75,7 @@ export default function About() {
             <img
               src={LLKLogo}
               alt="Platform Partner Logo"
-              className="h-60 w-120 object-contain"
+              className="h-50 w-100 object-contain"
             />
             <div className="text-center">
               <p className="text-sm text-gray-400">Presented by</p>
