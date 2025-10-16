@@ -26,9 +26,10 @@ export default function About() {
     'Access to Registered Contest',
     'Logic & Puzzle Challenges',
     'Real-World Problem Statements',
-    'Onsite Grand Finale Qualification',
     'Certificate of Participation'
   ];
+
+  const formUrl = 'https://forms.gle/aYaB37divYhcLCXLA';
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900">
@@ -89,7 +90,7 @@ export default function About() {
           })}
         </div>
 
-        {/* Redesigned Event Details card (matches provided image style) */}
+        {/* Redesigned Event Details card (blue accents, register opens Google Form) */}
         <div className="max-w-3xl mx-auto mb-10">
           <div className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 border border-blue-500/20 rounded-xl p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
@@ -98,11 +99,11 @@ export default function About() {
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="flex items-baseline gap-3">
-                      <span className="text-4xl md:text-6xl font-extrabold text-orange-400">₹99</span>
+                      <span className="text-4xl md:text-6xl font-extrabold text-blue-400">₹99</span>
                       <span className="text-sm md:text-base text-gray-400 line-through">₹200</span>
                     </div>
                     <div className="mt-2">
-                      <span className="inline-block bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      <span className="inline-block bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
                         50% OFF
                       </span>
                     </div>
@@ -119,23 +120,30 @@ export default function About() {
 
                 {/* Register button (below price on small screens) */}
                 <div className="mt-6">
-                  <button
-                    onClick={() => { /* handle register click (navigate/open modal) */ }}
-                    className="w-full md:w-auto px-6 py-4 bg-gradient-to-r from-orange-500 to-yellow-400 text-white rounded-2xl text-lg font-semibold shadow-lg hover:scale-105 transition-transform"
+                  <a
+                    href={formUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-full md:w-auto"
                   >
-                    Register Now
-                  </button>
+                    <button
+                      type="button"
+                      className="w-full md:w-auto px-6 py-4 bg-gradient-to-r from-blue-500 to-blue-400 text-white rounded-2xl text-lg font-semibold shadow-lg hover:scale-105 transition-transform"
+                    >
+                      Register Now
+                    </button>
+                  </a>
                 </div>
               </div>
 
               {/* Right - features list */}
               <div className="flex-1 w-full">
-                <h4 className="text-2xl font-semibold text-white mb-4">What's Included</h4>
+                <h4 className="text-2xl font-semibold text-white mb-4">Event Detail</h4>
                 <ul className="space-y-4">
                   {features.map((f, i) => (
                     <li key={i} className="flex items-start gap-4">
                       <span className="flex-shrink-0 mt-1">
-                        <div className="bg-orange-500 rounded-full p-2">
+                        <div className="bg-blue-500 rounded-full p-2">
                           <CheckCircle className="text-white" size={18} />
                         </div>
                       </span>
