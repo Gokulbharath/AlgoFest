@@ -2,7 +2,7 @@ import React from 'react';
 import { Code, Brain, Trophy, Globe, Zap, CheckCircle } from 'lucide-react';
 
 import KitLogo from '../assets/kit.jpg';
-import LLKLogo from '../assets/llt.png'; // ensure this file exists (case-sensitive)
+import LLKLogo from '../assets/llk.jpg'; // ensure this file exists (case-sensitive)
 
 type Highlight = {
   icon: React.ComponentType<any>;
@@ -48,7 +48,7 @@ export default function About() {
           <img
             src={KitLogo}
             alt="KIT Logo"
-            className="h-35 w-35 object-cover rounded-full shadow-lg"
+            className="h-20 w-20 object-cover rounded-full shadow-lg"
           />
         </div>
 
