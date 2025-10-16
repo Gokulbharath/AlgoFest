@@ -60,7 +60,7 @@ export default function About() {
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
             ALGOFEST Season 3 is a national-level hackathon designed to challenge and inspire the next generation of tech innovators.
             <br /><br />
-            <strong>Center for Training and Placements</strong>in association with <strong>Computer Science and Business Systems</strong>, organize this event to foster innovation and
+            <strong>Center for Training and Placements</strong> in association with <strong> Computer Science and Business Systems</strong>, organize this event to foster innovation and
             problem-solving skills.
             <br /><br />
             This 6-hour coding competition welcomes participants from colleges across the country.
@@ -75,7 +75,7 @@ export default function About() {
             <img
               src={LLKLogo}
               alt="Platform Partner Logo"
-              className="h-36 w-36 object-contain"
+              className="h-70 w-45 object-contain"
             />
             <div className="text-center">
               <p className="text-sm text-gray-400">Presented by</p>
