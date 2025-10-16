@@ -26,6 +26,7 @@ export default function About() {
     'Access to Registered Contest',
     'Logic & Puzzle Challenges',
     'Real-World Problem Statements',
+    'Onsite Grand Finale Qualification',
     'Certificate of Participation'
   ];
 
@@ -43,7 +44,7 @@ export default function About() {
             ALGOFEST Season 3 is a national-level hackathon designed to challenge and inspire the next generation of tech innovators.
             <br /><br />
             <strong>Center for Training and Placements</strong> and <strong>Computer Science and Business Systems</strong>,
-            in association with <strong>LearnLogicify Technologies</strong>, organize this event to foster innovation and
+            in association with <strong>LearnLogicify Technologies (Platform Partner)</strong>, organize this event to foster innovation and
             problem-solving skills.
             <br /><br />
             This 6-hour coding competition welcomes participants from colleges across the country.
@@ -90,7 +91,7 @@ export default function About() {
           })}
         </div>
 
-        {/* Redesigned Event Details card (blue accents, register opens Google Form) */}
+        {/* Redesigned Event Details card (blue accents, larger struck price, removed star SVG) */}
         <div className="max-w-3xl mx-auto mb-10">
           <div className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 border border-blue-500/20 rounded-xl p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
@@ -98,23 +99,17 @@ export default function About() {
               <div className="flex-shrink-0 bg-gradient-to-br from-black/40 to-gray-900/40 border border-gray-700 rounded-xl p-6 w-full md:w-1/2">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="flex items-baseline gap-3">
+                    <div className="flex items-baseline gap-4">
                       <span className="text-4xl md:text-6xl font-extrabold text-blue-400">₹99</span>
-                      <span className="text-sm md:text-base text-gray-400 line-through">₹199</span>
+                      {/* Enlarged struck-through original price */}
+                      <span className="text-2xl md:text-3xl font-semibold text-gray-400 line-through">₹200</span>
                     </div>
                     <div className="mt-2">
                       <span className="inline-block bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
                         50% OFF
                       </span>
                     </div>
-                    <p className="mt-4 text-gray-300">Early Bird Special - <span className="font-semibold text-white">Save ₹100!</span></p>
-                  </div>
-
-                  {/* Optional small promo icon */}
-                  <div className="hidden md:block">
-                    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" className="opacity-10">
-                      <path d="M12 2L14.5 8H21L15.75 12.25L18.25 18.5L12 14.25L5.75 18.5L8.25 12.25L3 8H9.5L12 2Z" fill="currentColor" />
-                    </svg>
+                    <p className="mt-4 text-gray-300">Early Bird Special - <span className="font-semibold text-white">Save ₹101!</span></p>
                   </div>
                 </div>
 
