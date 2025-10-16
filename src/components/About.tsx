@@ -1,7 +1,7 @@
 import { Code, Brain, Trophy, Globe, Zap, CheckCircle } from 'lucide-react';
 
 import KitLogo from '../assets/kit.jpg';
-import LLLogo from '../assets/ll.jpg';
+import LLKLogo from '../assets/llk.png'; // new single partner logo (llk.png)
 
 export default function About() {
   const highlights = [
@@ -35,7 +35,17 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 glow-text-blue">
+
+        {/* KIT logo centered at the very start */}
+        <div className="flex justify-center mb-6">
+          <img
+            src={KitLogo}
+            alt="KIT Logo"
+            className="h-28 w-28 object-cover rounded-full shadow-lg"
+          />
+        </div>
+
+        <h2 className="text-4xl md:text-6xl font-bold text-center mb-8 glow-text-blue">
           About
         </h2>
 
@@ -54,24 +64,17 @@ export default function About() {
             Our goal is to encourage problem-solving, algorithmic thinking, and real-world innovation through competitive programming.
           </p>
 
-          {/* Logos */}
-          <div className="flex items-center justify-center gap-8 mb-12">
-            <div className="bg-white rounded-full p-2 hover:scale-105 transition-transform duration-300 flex items-center justify-center">
-              <img
-                src={KitLogo}
-                alt="KIT Logo"
-                className="h-40 w-40 object-cover rounded-full"
-              />
-              <p className="sr-only">KIT</p>
-            </div>
-            <div className="text-4xl text-blue-400 font-bold">X</div>
-            <div className="bg-white rounded-full p-2 hover:scale-105 transition-transform duration-300 flex items-center justify-center">
-              <img
-                src={LLLogo}
-                alt="LearnLogicify Logo"
-                className="h-40 w-40 object-cover rounded-full"
-              />
-              <p className="sr-only">LearnLogicify</p>
+          {/* Replaced the previous two-logo row with a single centered llk.png and "Platform Partner" label */}
+          <div className="flex flex-col items-center justify-center gap-4 mb-12">
+            <img
+              src={LLKLogo}
+              alt="Platform Partner Logo"
+              className="h-36 w-36 object-contain"
+            />
+            <div className="text-center">
+              <p className="text-sm text-gray-400">Presented by</p>
+              <p className="text-xl font-semibold text-white mt-1">LearnLogicify Technologies</p>
+              <p className="text-sm text-blue-400 font-medium mt-1">Platform Partner</p>
             </div>
           </div>
         </div>
@@ -91,7 +94,7 @@ export default function About() {
           })}
         </div>
 
-        {/* Redesigned Event Details card (blue accents, larger struck price, removed star SVG) */}
+        {/* Redesigned Event Details card (blue accents, larger struck price) */}
         <div className="max-w-3xl mx-auto mb-10">
           <div className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 border border-blue-500/20 rounded-xl p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
@@ -113,7 +116,7 @@ export default function About() {
                   </div>
                 </div>
 
-                {/* Register button (below price on small screens) */}
+                {/* Register button */}
                 <div className="mt-6">
                   <a
                     href={formUrl}
