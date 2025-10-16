@@ -38,7 +38,7 @@ const rules = [
   in association with <strong>LearnLogicify Technologies</strong>, organize this event to foster innovation and
   problem-solving skills.
   <br /><br />
-  This 5-hour coding competition welcomes participants from colleges across the country.
+  This 6-hour coding competition welcomes participants from colleges across the country.
 </p>
 
 

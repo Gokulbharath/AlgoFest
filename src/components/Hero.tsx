@@ -73,7 +73,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-2 bg-gray-900/50 px-6 py-3 rounded-lg border border-blue-500/30">
               <Clock className="text-blue-400" size={24} />
-              <span>10:00 AM – 3:00 PM</span>
+              <span>10:00 AM – 4:00 PM</span>
             </div>
             <div className="flex items-center gap-2 bg-gray-900/50 px-6 py-3 rounded-lg border border-red-500/30">
               <MapPin className="text-red-400" size={24} />
