@@ -6,7 +6,7 @@ export default function Hero() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const eventDate = new Date('2025-10-25T10:00:00').getTime();
+      const eventDate = new Date('2025-11-08T10:00:00').getTime(); // Updated date
       const now = new Date().getTime();
       const difference = eventDate - now;
 
@@ -26,15 +26,17 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black z-0">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
-                           radial-gradient(circle at 80% 80%, rgba(0, 150, 255, 0.1) 0%, transparent 50%),
-                           radial-gradient(circle at 40% 20%, rgba(0, 200, 255, 0.1) 0%, transparent 50%)`
-        }}></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
+                             radial-gradient(circle at 80% 80%, rgba(0, 150, 255, 0.1) 0%, transparent 50%),
+                             radial-gradient(circle at 40% 20%, rgba(0, 200, 255, 0.1) 0%, transparent 50%)`,
+          }}
+        ></div>
 
         <div className="absolute inset-0 opacity-20">
           {[...Array(50)].map((_, i) => (
@@ -69,7 +71,7 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 text-lg">
             <div className="flex items-center gap-2 bg-gray-900/50 px-6 py-3 rounded-lg border border-blue-500/30">
               <Calendar className="text-blue-400" size={24} />
-              <span>25th October 2025</span>
+              <span>8th November 2025</span> {/* Updated display date */}
             </div>
             <div className="flex items-center gap-2 bg-gray-900/50 px-6 py-3 rounded-lg border border-blue-500/30">
               <Clock className="text-blue-400" size={24} />
@@ -77,7 +79,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-2 bg-gray-900/50 px-6 py-3 rounded-lg border border-red-500/30">
               <MapPin className="text-red-400" size={24} />
-              <span>virtual</span>
+              <span>Virtual</span>
             </div>
           </div>
 
@@ -103,15 +105,16 @@ export default function Hero() {
           </div>
 
           <button
-  onClick={() => window.open(
-    "https://docs.google.com/forms/d/e/1FAIpQLSfX-AQ8yoYP70ZQSQ4GqVPFZ7E-z4A4mUr1icvu0PFkQ_ROxg/viewform?usp=dialog",
-    "_blank"
-  )}
-  className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-xl px-12 py-4 rounded-full transition-all duration-300 glow-border-blue hover:scale-105 animate-pulse"
->
-  Register Now
-</button>
-
+            onClick={() =>
+              window.open(
+                'https://docs.google.com/forms/d/e/1FAIpQLSfX-AQ8yoYP70ZQSQ4GqVPFZ7E-z4A4mUr1icvu0PFkQ_ROxg/viewform?usp=dialog',
+                '_blank'
+              )
+            }
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold text-xl px-12 py-4 rounded-full transition-all duration-300 glow-border-blue hover:scale-105 animate-pulse"
+          >
+            Register Now
+          </button>
         </div>
       </div>
 
